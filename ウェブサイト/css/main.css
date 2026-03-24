@@ -1,0 +1,181 @@
+.main_box {
+    width: 100vw;
+    height: 70vh;
+    padding-top: 45px; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_slide_area {
+    /* スライドショーの枠 */
+    position: relative;
+
+    width: 95%;
+    height: 100%; 
+    margin: 10px auto;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main_slide_img_area {
+    /* スライドショーの画像を横並びに */
+    display: flex;
+    transition: transform .35s;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100%; 
+    overflow: hidden;
+}
+
+
+.main_slide_img {
+    height: 100%;
+    width: auto;
+    border-radius: 12px;
+    transform: scale(.7);   /* 小さく */
+    transition: transform .25s; /* 拡大のアニメーション */
+    z-index: 8;
+}
+
+
+.main_slide_img.active {
+    transform: scale(1);    /* 等倍 */
+    z-index: 10;
+}
+
+
+
+.main_button {
+    background-color: #f2a6a19d;
+    color: white;
+    display: flex;
+    transition: transform .35s;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    border-radius: 12px;
+    border: none;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.main_komono_box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 45px;
+}
+
+.main_komonohaiti_box{
+    position: relative;
+    width: 95%;
+    height: 100%;
+    margin: 10px auto;
+}
+
+.main_rantan {
+    position: absolute;
+    top: 30px;
+    width: 20vh;
+    height: auto;
+}
+
+#main_book_box{
+        position: absolute;
+        top: 70%;
+        right: 20%;
+        z-index: 15;
+}
+#main_heart_box{
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    z-index: 15;
+}
+#main_mail_box{
+        position: absolute;
+        top: 70%;
+        left: 5%;
+        z-index: 15;
+}
+
+#main_pencil_box {
+    position: absolute;
+    top: 50%; /* 表示したい部分まで移動 */
+    left: 2%;
+    z-index: 15;
+}
+
+.rantan_animation{
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+
+
+
+
+#main_book{
+    animation-name: anim_1; 
+        animation-duration: 2s;     
+}
+#main_heart {
+
+  animation-name: anim_2;
+    animation-duration: 3s;
+}
+
+#main_mail{
+    animation-name: anim_3; 
+        animation-duration: 2s;     
+}
+#main_pencil {
+  animation-name: anim_4;
+    animation-duration: 3s;
+}
+
+@keyframes anim_2 {
+  0% {
+    transform: translate(0, 0px);
+  }
+  100% {
+    transform: translate(5px, 5px);
+  }
+}
+
+@keyframes anim_1 {
+  0% {
+    transform: translate(0, 0px);
+  }
+  100% {
+    transform: translate(-5px, -5px);
+  }
+}
+
+
+@keyframes anim_3 {
+  0% {
+    transform: translate(0, 0px);
+  }
+  100% {
+    transform: translate(-5px, -5px);
+  }
+}
+
+@keyframes anim_4 {
+  0% {
+    transform: translate(0, 0px);
+  }
+  100% {
+    transform: translate(-5px, -5px);
+  }
+}

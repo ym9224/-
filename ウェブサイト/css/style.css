@@ -1,0 +1,297 @@
+html, body {
+        font-family: 游ゴシック;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 1rem;
+        -webkit-font-feature-settings: "palt";
+        font-feature-settings: "palt";
+        -webkit-font-smoothing: antialiased;
+        letter-spacing: 0.125em; 
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        min-width: 360px;   /* 横幅の最小サイズ */
+        min-height: 640px;
+        overflow-x: hidden;
+        overflow-y: auto;
+} 
+:root{
+        --purple: #B67FB9;
+        --pink: #F2A7A1;
+}
+*{
+        margin: 0;
+        padding: 0px;
+        /*background-color: #e7ed9893;
+        text-align: center;
+        */
+        box-sizing: border-box;
+}
+
+.one_title{
+        font-size: 22px;
+        padding-top: 40px;
+        text-align: center;
+}
+.en_min_title{
+        letter-spacing: 0.1em;
+}
+
+
+
+
+.header_box {
+    position: fixed;
+    background-color: var(--purple);
+    color: white;
+    width: 100%;
+    height: 50px;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: center; /* ロゴを中央に置く */
+    padding: 0 20px; /* 両端に少し余白 */
+    box-sizing: border-box;
+    z-index: 30;
+}
+
+.div_logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 60px;
+}
+
+#logo {
+    height: 50px;
+    width: auto;
+    margin-top: 5px;
+}
+
+/* メニューアイコンの位置 */
+#openMenu {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+
+
+.div_index {
+        height: 30px; 
+        text-align: right;
+        margin-top:-6px;
+}
+#index {
+        font-size: 12px;
+}
+
+
+
+
+.menu_index {
+        position: fixed;
+        top: 45px;
+        right: -150px;
+        height: 100%;
+        width: 100px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        list-style: none;
+        font-size: x-large;
+        background-color:  #B67FB9;
+        z-index: 30;
+}
+
+.a_index{
+        font-size: 12px;
+        display: block;
+        padding: 10px 0px;
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px solid white;
+        background-color:  #B67FB9;
+        z-index: 30;
+}
+
+.a_index:hover {
+    background-color: #eddf98;
+}
+
+.showMenu {
+    transform: translateX(-150px);
+}
+
+#menuContent {
+    transition: transform 0.3s;
+}
+
+
+
+
+
+
+.chara{
+        margin-top: 100px;
+}
+
+
+main{
+    margin-top:0px;
+    padding: 5px;
+    min-height: 500px;
+}
+
+
+
+
+
+
+p {color:grey;
+   font-size: 16px;}
+
+
+
+
+footer {color:#B67FB9;
+        font-size: 15px;}
+
+.Copyright {color:grey;
+        font-size: 10px;}
+
+
+
+
+
+
+
+
+
+
+.time_box {
+    display: flex;
+    justify-content: center;  /* 中央揃え */
+    align-items: center;
+    margin-top: 20px;  /* 上に余白を追加（任意） */
+}
+
+#time {
+    background-color: #F2A7A1;
+    color: white;
+    border-radius: 50px;
+    font-size: 14px;
+    width: 350px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px; /* テキストを縦方向中央に */
+}
+
+
+.fot_ul{
+        text-align: center;
+        background-color: #B67FB9;
+        padding: 30px 20px;
+        color: #ffffff;
+}
+
+.fot_ul button a {
+        text-decoration: none;
+        color: #ffffff;
+}
+
+.fot_ul button {
+        background-color: #e0c477;
+        margin-bottom: 20px;
+        width: 120px;
+        height: 40px;
+}
+
+.top_button {
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--purple); 
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    position: relative;
+    transition: color 0.5s ease;
+    z-index: 0;
+}
+.top_button:hover {
+    color: #fff;
+}
+.top_button:hover::before {
+  transform: scaleY(1);
+}
+.top_button::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: all 0.5s ease;
+    transition-property: transform;
+    background: var(--pink); 
+    z-index: -1;
+}
+
+
+/* リスト全体 */
+.fot_ul ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 20px;
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+
+.fot_ul ul li {
+        font-size: 1em;
+        cursor: pointer;
+}
+
+
+.otoi_link figcaption {
+  color: white;
+  border-radius: 8px;
+  font-size: 0.95em;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+.otoi_link figcaption:hover {
+  background-color: #B67FB9;
+}
+
+
+
+
+
+.media_icon{
+        font-size: 30px;
+        cursor: pointer;
+}
+
+.fot_pic{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+}
+
+

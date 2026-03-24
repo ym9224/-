@@ -1,0 +1,264 @@
+<!--2318165　山田夕都紀-->
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<title>推ししか勝たん</title>
+	<link rel="icon" type="image/png" href="image/header/compose.webp">
+	<link rel="stylesheet" type="text/css" href="http">
+	<link rel="stylesheet" type="text/css" href="link/slick.css">
+	<link rel="stylesheet" type="text/css" href="link/slick-theme.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/chara_style.css">
+	<link rel="stylesheet" href="css/sum_style.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/pop.css">
+</head>
+
+<body>
+	<header class="header_box">
+		<div class="div_logo">
+			<img src="" alt="ゲームのロゴ" id="logo" class="index_smooth" href="#top">
+		</div>
+	    <div id="openMenu" class="div_index">
+			<h2>≡</h2>
+		</div>
+        <ul id="menuContent" class="menu_index">
+            <li><a class="a_index index_smooth" href="#chara">Characters</a></li>
+            <li><a class="a_index index_smooth" href="#sum">Summary</a></li>
+			<li><a class="a_index index_smooth" href="#top">Top</a></li>
+        </ul>
+		
+    </header>
+
+
+	<main>
+		<section class="main_sec" id="top">
+			<section class="main_box">
+				<div class="main_slide_area">
+					<button class="main_prev main_button">‹</button>
+						<div class="main_slide_img_area">
+							<img src="image/main/slideshow/classroom.jpg" alt="main" class="main_slide_img" id="main_slide_img_0">
+							<img src="image/main/slideshow/sea.jpg" alt="main" class="main_slide_img" id="main_slide_img_1">
+							<img src="image/main/slideshow/anemone.jpg" alt="main" class="main_slide_img" id="main_slide_img_2">
+						</div>
+					<button class="main_next main_button">›</button>
+				</div>
+
+				<div class="main_komono_box">
+					<div class="main_komonohaiti_box">
+						<div class="main_rantan_box" id="main_book_box">
+							<img src="image/main/book.png" id="main_book" class="main_rantan rantan_animation">
+						</div>
+						<div class="main_rantan_box" id="main_heart_box">
+							<img src="image/main/heart.png" id="main_heart" class="main_rantan rantan_animation">
+						</div>
+						<div class="main_rantan_box" id="main_mail_box">
+							<img src="image/main/mail.png" id="main_mail" class="main_rantan rantan_animation">
+						</div>
+						<div class="main_rantan_box" id="main_pencil_box">
+							<img src="image/main/pencil.png" class="main_rantan rantan_animation" id="main_pencil">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="chara">
+				<div class="oneArea" id="chara">
+					<div class="one_title">
+						<h2 class="en_min_title" id="en_chara_title">Characters</h2>
+						<h5 class="jp_min_title" id="jp_chara_title">キャラクター</h5>
+					</div>
+					<div class="chara_slide_box">	
+						<div class="chara_container">
+							<div class="chara_slide">
+								<div class="chara_item"  id="chara_1" style="background-image: url(./image/chara/chara_1.png);">
+									<div class="chara_content">
+										<div class="chara_name">キャラクターの名前１</div>
+										<div class="chara_des">キャラクターの説明が入ります。キャラクターの説明が入ります。キャラクターの説明が入ります。キャラクターの説明が入ります。キャラクターの説明が入ります。キャラクターの説明が入ります。</div>
+										<button	class="chara_button" onclick="openChara(1)">もっと見る</button>
+									</div>
+								</div>
+								<div class="chara_item" id="chara_2" style="background-image: url(./image/chara/chara_2.png);">
+									<div class="chara_content">
+										<div class="chara_name">キャラクターの名前２</div>
+										<div class="chara_des">キャラクターの説明が入ります。キャラクターの説明が入ります。キャラクターの説明が入ります。キャラクターの説明が入ります。キャラクターの説明が入ります。</div>
+										<button	class="chara_button"  onclick="openChara(2)">もっと見る</button>
+									</div>
+								</div>
+								<div class="chara_item" id="chara_3" style="background-image: url(./image/chara/chara_3.png);">
+									<div class="chara_content">
+										<div class="chara_name">キャラクターの名前３</div>
+										<div class="chara_des">キャラクターの説明が入ります。キャラクターの説明が入ります。キャラクターの説明が入ります。キャラクターの説明が入ります。キャラクターの説明が入ります。</div>
+										<button	class="chara_button" onclick="openChara(3)">もっと見る</button>
+									</div>
+								</div>
+								<div class="chara_item" id="chara_4" style="background-image: url(./image/chara/chara_4.png);">
+									<div class="chara_content">
+										<div class="chara_name">キャラクターの名前４</div>
+										<div class="chara_des">キャラクターの説明が入ります。キャラクターの説明が入ります。キャラクターの説明が入ります。キャラクターの説明が入ります。キャラクターの説明が入ります。キャラクターの説明が入ります。</div>
+										<button	class="chara_button" onclick="openChara(4)">もっと見る</button>
+									</div>
+								</div>
+								<div class="chara_item" id="chara_5" style="background-image: url(./image/chara/chara_5.png);">
+									<div class="chara_content">
+										<div class="chara_name">キャラクターの名前５</div>
+										<div class="chara_des">キャラクターの説明が入ります。キャラクターの説明が入ります。キャラクターの説明が入ります。キャラクターの説明が入ります。キャラクターの説明が入ります。</div>
+										<button	class="chara_button" onclick="openChara(5)">もっと見る</button>
+									</div>
+								</div>
+								<div class="chara_item" id="chara_6" style="background-image: url(./image/chara/chara_6.png);">
+									<div class="chara_content">
+										<div class="chara_name">キャラクターの名前６</div>
+										<div class="chara_des">キャラクターの説明が入ります。キャラクターの説明が入ります。キャラクターの説明が入ります。キャラクターの説明が入ります。キャラクターの説明が入ります。キャラクターの説明が入ります。</div>
+										<button	class="chara_button" onclick="openChara(6)">もっと見る</button>
+									</div>
+								</div>
+								<div class="chara_item"  id="chara_7" style="background-image: url(./image/chara/chara_7.png);">
+									<div class="chara_content">
+										<div class="chara_name">キャラクターの名前７</div>
+										<div class="chara_des">キャラクターの説明が入ります。キャラクターの説明が入ります。</div>
+										<button	class="chara_button" onclick="openChara(7)">もっと見る</button>
+									</div>
+								</div>
+								<div class="chara_item"  id="chara_8" style="background-image: url(./image/chara/chara_8.png);">
+									<div class="chara_content">
+										<div class="chara_name">キャラクターの名前８</div>
+										<div class="chara_des">キャラクターの説明が入ります。キャラクターの説明が入ります。キャラクターの説明が入ります。キャラクターの説明が入ります。</div>
+										<button	class="chara_button" onclick="openChara(8)">もっと見る</button>
+									</div>
+								</div>
+							</div>
+							<div class="chara_nx_pr_button">
+								<button class="chara_prev"><i class="fa-solid fa-caret-left" style="color: #ffffff;"></i></button>
+								<button class="chara_next"><i class="fa-solid fa-caret-right" style="color: #ffffff;"></i></button>
+							</div>
+						</div>	
+					</div>	
+				</div>
+			</section>
+
+			<section class="summary">
+				<div class="oneArea" id="sum">
+					<div class="one_title" id="sum_title">
+						<h2 class="en_min_title" id="en_sum_title">Summary</h2>
+						<h5 class="jp_min_title" id="jp_sum_title">あらすじ</h5>
+					</div>	
+					<div class="sum_box">
+						<div class="sum_block">
+							<div class="sum_p_box" id="sum_p_box_1">
+								<p class="sum_p" id="sum_p_1">ゲームのあらすじが入ります。ゲームのあらすじが入ります。ゲームのあらすじが入ります。ゲームのあらすじが入ります。ゲームのあらすじが入ります。ゲームのあらすじが入ります。</p>
+							</div>
+							<div class="sum_img" id="sum_img_1">
+								<img src="image/main/slideshow/classroom.jpg">
+							</div>
+						</div>
+						<div class="sum_block">
+							<div class="sum_img" id="sum_img_2">
+								<img src="image/main/slideshow/sea.jpg">
+							</div>
+							<div class="sum_p_box" id="sum_p_box_2">
+								<p class="sum_p" id="sum_p_2">ゲームのあらすじが入ります。ゲームのあらすじが入ります。ゲームのあらすじが入ります。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
+
+		</section>
+
+	</main>
+
+	<section>
+		<footer>
+			<div class="fot_ul">
+			<button class="top_button"><a class="top index_smooth" href="#top">トップに戻る</a></button>
+			<ul>
+				<li onclick="conversation()">関連サイト</li>
+				<li onclick="conversation()">
+					<figure>
+							<figcaption>お問い合わせ</figcaption>
+					</figure>
+				</li>
+			</ul>
+			<div class="media">
+			<i class="fa-brands fa-youtube media_icon" onclick="conversation()"></i>
+			<i class="fa-brands fa-x-twitter media_icon" onclick="conversation()"></i>
+			<i class="fa-regular fa-envelope media_icon" onclick="conversation()"></i>
+			</div>
+			
+			<div class="time_box">
+				<p id="time">日時を表示する</p>
+			</div>
+			<p class="Copyright">Copyright ©2025</p>
+			</div>
+		</footer>
+	</section>
+
+	
+	<div id="intro_modal" class="intro_modal">
+		<div class="intro_modal_content">
+			<button class="intro_close">✕</button>
+
+			<h2>サイトについて</h2>
+			<p>
+			このサイトは講義で制作した課題サイトをもとに改変したものです。<br>
+			将来的に自作の恋愛ゲームの紹介サイトとして活用するため、画像やデザインを自作イメージ素材へと変更しています。
+			</p>
+
+			<button class="intro_ok">サイトを見る</button>
+		</div>
+	</div>
+
+	<div id="chara_modal" class="chara_modal">
+		<div class="chara_modal_inner">
+			
+			<button class="chara_modal_close">×</button>
+
+			<div class="chara_modal_header">
+			<img id="modal_img" class="modal_img">
+			<div class="modal_meta">
+				<h3 id="modal_name"></h3>
+				<p id="modal_birth"></p>
+				<p id="modal_food"></p>
+				<p id="modal_hobby"></p>
+			</div>
+			</div>
+
+			<p id="modal_desc" class="modal_desc"></p>
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript" src="link/jquery-3.7.1.min.js"></script>
+	<script type="text/javascript" src="link/slick.min.js"></script>
+	<script src="java1.js"></script>
+	<script src="javascript/main_slide.js"></script>
+	<script src="javascript/modal.js"></script>
+		<script>
+		const now = new Date();
+		const year = now.getFullYear();
+		const month = now.getMonth();
+		const date = now.getDate();
+		const hour = now.getHours();
+		const min = now.getMinutes();
+		const output = `現在：${year}年${month + 1}月${date}日${hour}時${min}分`;
+		document.getElementById("time").textContent = output; 
+
+
+
+	</script>
+</body>
+</html>

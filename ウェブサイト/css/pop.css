@@ -1,0 +1,91 @@
+/* 黒背景 */
+.intro_modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+
+.intro_modal_content {
+    background: #fff;
+    padding: 24px 28px;
+    width: min(90%, 520px);
+    border-radius: 16px;
+    position: relative;
+    text-align: left;
+}
+
+
+.intro_close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.intro_ok {
+    margin-top: 18px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #b67fb9;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+.chara_modal{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.chara_modal_inner{
+    background:#fff;
+    width: min(800px, 90%);
+    height: min(90%, 520px);
+    padding: 20px;
+    border-radius: 14px;
+    position: relative;
+}
+
+.chara_modal_close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 22px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.chara_modal_header{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.modal_img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.modal_desc{
+    margin-top: 10px;
+    line-height: 1.7;
+}
